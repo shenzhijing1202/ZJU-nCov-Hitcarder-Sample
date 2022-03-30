@@ -40,7 +40,7 @@ jobs:
             
     steps:
       - name: Working
-        uses: Long0x0/zju-ncov-hitcarder@0.0.x
+        uses: sanlukuangji/ZJU-nCov-Hitcarder@0.0.1 
         with:
           username: ${{ secrets[matrix.username] }}
           password: ${{ secrets[matrix.password] }}
