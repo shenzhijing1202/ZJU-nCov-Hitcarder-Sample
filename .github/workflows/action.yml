@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2     
       - name: Working
-        uses: Long0x0/zju-ncov-hitcarder@master 
+        uses: sanlukuagnji/ZJU-nCov-Hitcarder@0.0.1 
         with:
           username: ${{ secrets[matrix.username] }}
           password: ${{ secrets[matrix.password] }}
