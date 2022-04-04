@@ -1,4 +1,4 @@
-name: ZJU-nCov-Hitcarder Sample
+name: ZJU-nCov-Hitcarder Action
 
 on:
   workflow_dispatch:
@@ -28,9 +28,7 @@ jobs:
             password: ZJU_PASSWORD5
             dingtalk_token: DINGTALK_TOKEN5
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2     
+    steps:     
       - name: Working
         uses: sanlukuagnji/ZJU-nCov-Hitcarder@0.0.1 
         with:
