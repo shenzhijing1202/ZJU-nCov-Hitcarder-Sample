@@ -1,9 +1,9 @@
-name: 'ZJU-nCov-Hitcarder Action'
+name: ZJU-nCov-Hitcarder Sample
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '30 22 * * *'
 
 jobs:
   main:
@@ -29,8 +29,10 @@ jobs:
             dingtalk_token: DINGTALK_TOKEN5
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2     
       - name: Working
-        uses: sanlukuangji/ZJU-nCov-Hitcarder@0.0.1 
+        uses: Long0x0/zju-ncov-hitcarder@master 
         with:
           username: ${{ secrets[matrix.username] }}
           password: ${{ secrets[matrix.password] }}
